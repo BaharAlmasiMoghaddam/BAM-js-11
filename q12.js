@@ -4,11 +4,16 @@
 // todo3: The function should return this statement ==> "Time to go to {property_value} class!"
 
 const myClasses = {
-  firstHour: 'Ethics',
-  secondHour: 'Programming',
-  thirdHour: 'Biology',
+  firstHour: "Ethics",
+  secondHour: "Programming",
+  thirdHour: "Biology",
 };
 
 //   Example Output: "Time to go to Programming class!"
 
 // ! Answer
+
+const goToSecondClass = ({ secondHour }) =>
+  `Time to go to ${secondHour} class!`;
+
+console.log(goToSecondClass(myClasses));
