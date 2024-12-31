@@ -4,10 +4,16 @@
 // todo3 : Use  template strings when printing the first and last name.
 
 const person2 = {
-  first: 'Elon',
-  last: 'Musk',
-  twitter: '@elonmusk',
-  company: 'Space X',
+  first: "Elon",
+  last: "Musk",
+  twitter: "@elonmusk",
+  company: "Space X",
 };
 
 // ! Answer
+
+function displayName({ first, last }) {
+  console.log(`First Name: ${first}, Last Name: ${last}`);
+}
+
+displayName(person2);

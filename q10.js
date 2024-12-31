@@ -6,6 +6,15 @@
 // todo5 : rest: all other elements in the array
 // Hint  : You can write a one line function to make this work using : An arrow function and array destructuring in the function argument
 
-const ArrayOfNames = ['Tom', 'Margaret', 'Allison', 'David', 'Pierre'];
+const ArrayOfNames = ["Tom", "Margaret", "Allison", "David", "Pierre"];
 
 // ! Answer
+const extractElements = ([first, second, third, ...rest]) => ({
+  first,
+  second,
+  third,
+  rest,
+});
+
+const result = extractElements(ArrayOfNames);
+console.log(result);
